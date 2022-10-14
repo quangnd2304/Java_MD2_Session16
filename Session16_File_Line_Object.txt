@@ -1,0 +1,35 @@
+1. File - Demo01
+- Cho phép nhập dữ liệu từ bàn phím, ghi dữ liệu ra file text
+theo dòng sử dụng BufferedWriter
+	+ B1. Khởi tạo đối tượng file từ java.io.File
+	+ B2. Khởi tạo đối tượng Output của Stream để ghi ra file
+		*B2.1. Khởi tạo đối tượng FileOutputStream từ file
+		*B2.2. Khởi tạo đối tượng OutputStreamWriter 
+		từ FileOutputStream
+		*B2.3. Khởi tạo đối tượng BufferedWriter từ OutputStream
+	+ B3. Ghi dữ liệu ra file
+		*B3.1. Dùng phương thức writeLine của BufferedWriter để ghi
+		dữ liệu
+		*B3.2. Đẩy dữ liệu từ buffer ra file: sử dụng phương thức
+		flush() của BufferedWriter
+	+ B4. Đóng các kết nối (Đối tượng): close()
+- Cho phép đọc dữ liệu từ file theo dòng sử dụng BufferedReader
+2. File - Demo02
+- Cho phép ghi dữ liệu ra file theo object
+	+ B1. Khởi tạo đối tượng File
+	+ B2. Khởi tạo các đối tượng OutputStream
+		*B2.1. Khởi tạo đối tượng FileOutputStream
+		*B2.2. Khởi tạo đối tượng ObjectOutputStream
+	+ B3. Ghi đối tượng ra file
+		*B3.1. Sử dụng phương thức writeObject
+		*B3.2. Sử dụng phương thức flush()
+	+ B4. Đóng các kết nối
+- Cho phép đọc dữ liệu từ file theo object
+	+ B1. Khởi tạo đối tượng File
+	+ B2. Khởi tạo các đối tượng InputStream
+		*B2.1. Khởi tạo đối tượng FileInputStream
+		*B2.2. Khởi tạo đối tượng ObjectInputStream
+	+ B3. Đọc dữ liệu từ file sử dụng phương thức readObject
+	+ B4. Đóng các kết nối
+
+		
